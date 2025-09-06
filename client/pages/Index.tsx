@@ -88,7 +88,7 @@ export default function Index() {
   const [lang, setLang] = useState<Lang>(getLang());
   const [online, setOnline] = useState<boolean>(navigator.onLine);
   const [imageUrl, setImageUrl] = useState<string | null>(null);
-  const [input, setInput] = useState("\");
+  const [input, setInput] = useState("");
   const [messages, setMessages] = useState<Msg[]>([]);
   const [listening, setListening] = useState(false);
   const [form, setForm] = useState<FarmInput>({
@@ -168,7 +168,7 @@ export default function Index() {
     const userMsg: Msg = { role: "user", text };
     const aiMsg: Msg = { role: "ai", text: aiRespond(text) };
     setMessages((m) => [...m, userMsg, aiMsg]);
-    setInput("\");
+    setInput("");
     speak(aiMsg.text);
   }
 
