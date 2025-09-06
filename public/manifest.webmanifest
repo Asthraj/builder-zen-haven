@@ -1,0 +1,16 @@
+{
+  "name": "KrishiAI – Smart Crop Advisor",
+  "short_name": "KrishiAI",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#14532d",
+  "icons": [
+    {
+      "src": "/placeholder.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
